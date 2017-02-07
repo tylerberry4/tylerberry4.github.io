@@ -6,6 +6,7 @@ var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
 var pkg = require('./package.json');
+var webserver = require('gulp-webserver');
 
 // Set the banner content
 var banner = ['/*!\n',
@@ -25,6 +26,15 @@ gulp.task('less', function() {
         .pipe(browserSync.reload({
             stream: true
         }))
+});
+
+gulp.task('webserver', function() {
+  gulp.src('app')
+    .pipe(webserver({
+      livereload: true,
+      directoryListing: true,
+      open: true
+    }));
 });
 
 // Minify compiled CSS
