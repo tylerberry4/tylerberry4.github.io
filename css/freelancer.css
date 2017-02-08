@@ -108,6 +108,7 @@ header .intro-text .skills {
 }
 .navbar-custom {
   background: #042F49;
+  box-shadow: -1px 6px 20px 4px rgba(0, 0, 0, 0.09);
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -447,6 +448,9 @@ fieldset[disabled] .btn-success.active {
 .scroll-top .btn:focus {
   outline: none;
 }
+.img-responsive {
+  border-radius: 3px;
+}
 .portfolio-modal .modal-content {
   border-radius: 0;
   background-clip: border-box;
@@ -463,6 +467,7 @@ fieldset[disabled] .btn-success.active {
 }
 .portfolio-modal .modal-content img {
   margin-bottom: 30px;
+  box-shadow: -1px 6px 20px 4px rgba(0, 0, 0, 0.09);
 }
 .portfolio-modal .modal-content .item-details {
   margin: 30px 0;
@@ -481,9 +486,9 @@ fieldset[disabled] .btn-success.active {
 }
 .portfolio-modal .close-modal .lr {
   height: 75px;
-  width: 1px;
+  width: 2px;
   margin-left: 35px;
-  background-color: #042F49;
+  background-color: #F37052;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   /* IE 9 */
@@ -493,8 +498,8 @@ fieldset[disabled] .btn-success.active {
 }
 .portfolio-modal .close-modal .lr .rl {
   height: 75px;
-  width: 1px;
-  background-color: #042F49;
+  width: 2px;
+  background-color: #F37052;
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   /* IE 9 */
